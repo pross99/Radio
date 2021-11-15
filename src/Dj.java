@@ -1,23 +1,24 @@
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Hashtable;
 import java.util.Iterator;
 
 
-public class DiscJockey {
+public class Dj {
 
-    SongsOfThe70s songs70s;
-    SongsOfThe80s songs80s;
+    SongsOfThe00s songs70s;
+    SongsOfThe2010s songs80s;
     SongsOfThe90s songs90s;
 
-    SongIterator iter70sSongs;
-    SongIterator iter80sSongs;
-    SongIterator iter90sSongs;
 
-    public DiscJockey(SongIterator  songs70s, SongIterator  songs80s, SongIterator  songs90s) {
-        iter70sSongs = songs70s;
-        iter80sSongs = songs80s;
+    SongIterator iter90sSongs;
+    SongIterator iter00sSongs;
+    SongIterator iter10sSongs;
+
+
+    public Dj(SongIterator  songs90s, SongIterator  songs00s, SongIterator  songs10s) {
+
         iter90sSongs = songs90s;
+        iter00sSongs = songs00s;
+        iter10sSongs = songs10s;
+
     }
 
 //    public void showTheSongs() {
@@ -60,18 +61,24 @@ public class DiscJockey {
 //    }
 
     public void showTheSongs2() {
-        Iterator songs70s = iter70sSongs.createIterator();
-        Iterator songs80s = iter80sSongs.createIterator();
+
         Iterator songs90s = iter90sSongs.createIterator();
-
-        System.out.println("Songs of the 70s \n");
-        printTheSongs(songs70s);
-
-        System.out.println("Songs of the 80s \n");
-        printTheSongs(songs80s);
-
+        Iterator songs00s = iter00sSongs.createIterator();
+        Iterator songs10s = iter10sSongs.createIterator();
         System.out.println("Songs of the 90s \n");
         printTheSongs(songs90s);
+        System.out.println("\n");
+
+        System.out.println("Songs of the 2000s \n");
+        printTheSongs(songs00s);
+        System.out.println("\n");
+
+        System.out.println("Songs of the 2010s \n");
+        printTheSongs(songs10s);
+        System.out.println("\n");
+
+
+
 
 
 

@@ -1,12 +1,13 @@
 public class RadioStation {
 
     public static void main (String[] args) {
-        SongsOfThe70s songs70s = new SongsOfThe70s();
-        SongsOfThe80s songs80s = new SongsOfThe80s();
+
         SongsOfThe90s songs90s = new SongsOfThe90s();
+        SongsOfThe00s songs00s = new SongsOfThe00s();
+        SongsOfThe2010s songs10s = new SongsOfThe2010s();
 
 
-        DiscJockey madPete = new DiscJockey(songs70s, songs80s, songs90s);
+        Dj madPete = new Dj( songs90s,songs00s, songs10s);
 
         madPete.showTheSongs2();
     }

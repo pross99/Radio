@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class SongsOfThe70s implements SongIterator {
+public class SongsOfThe00s implements SongIterator {
     ArrayList<SongInfo> bestSongs;
 
-    public SongsOfThe70s() {
+    public SongsOfThe00s() {
         bestSongs = new ArrayList<SongInfo>();
 
-        addSong("Imagine", "John Lennon", 1971);
-        addSong("American Pie", "Don McLean", 1971);
-        addSong("I Will Survive", "Gloria Gaynor", 1979);
+        addSong("In da club", "50 Cent", 2003);
+        addSong("Hey ya", "Outkast", 2003);
+        addSong("Gold Digger", "Kanye West", 2005);
     }
 
 

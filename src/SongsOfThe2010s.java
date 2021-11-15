@@ -1,17 +1,17 @@
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class SongsOfThe80s  implements SongIterator{
+public class SongsOfThe2010s implements SongIterator{
    SongInfo[] bestSongs;
 
    int arrayValue = 0;
 
-    public SongsOfThe80s() {
+    public SongsOfThe2010s() {
         bestSongs = new SongInfo[3];
 
-        addSong("Roam", "B52s", 1989);
-        addSong("Cruel Summer", "Bananarama", 1984);
-        addSong("Head Over Heals", "Tears for Fears", 1985);
+        addSong("DESPACITO", "Luis fonsi", 2017);
+        addSong("Old Town Road", "Lil Nas X", 2019);
+        addSong("Radioactive", "Imagine dragons", 2012);
     }
 
 
